@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../App";
+import "./Orders.css";
 import axios from "axios";
 function Orders() {
   const API_URL = import.meta.env.VITE_API_URL;
