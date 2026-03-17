@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Register.css";
 import axios from "axios";
 function Register() {
   const [user, setUser] = useState({});
