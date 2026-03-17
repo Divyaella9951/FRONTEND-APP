@@ -1,12 +1,71 @@
-.App-Header{
-  background-color: rgb(38, 223, 87);
+/* Main header */
+.App-Header {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  background-color: #2c7be5;
+  padding: 15px 30px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
+/* Logo / Title */
+.App-Header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation list */
+.App-Header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* List items */
 .App-Header li {
-    display: inline-block;
-    font-size: 20;
-    padding: 5px;
+  margin-left: 20px;
+}
+
+/* Links */
+.App-Header a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.App-Header a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Active link (optional if you use NavLink later) */
+.App-Header a.active {
+  background-color: white;
+  color: #2c7be5;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .App-Header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .App-Header ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .App-Header li {
+    margin: 10px 0;
+  }
 }
